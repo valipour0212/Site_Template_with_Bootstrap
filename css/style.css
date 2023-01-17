@@ -1,5 +1,6 @@
 * {
-    font-family: "B Yekan";
+    direction: rtl;
+    font-family: "B Yekan", Loma;
     text-decoration: none !important;
 }
 
@@ -28,4 +29,86 @@
 
 .custom-header-none a:hover {
     color: #F58221 !important;
+}
+
+.custom-navbar-nav li a {
+    font-size: 14px !important;
+    color: #FFFFFF !important;
+}
+
+.custom-dropdown-menu {
+    background-color: #F8F9FA !important;
+}
+
+.custom-navbar-nav .custom-dropdown-menu {
+    background-color: #FFFFFF !important;
+    margin-top: 0 !important;
+}
+
+.custom-navbar-nav .custom-dropdown-menu a {
+    color: #000000 !important;
+    transition: all 0.3s ease !important;
+    background: none !important;
+}
+
+.custom-navbar-nav .custom-dropdown-menu a:hover {
+    color: #F58221 !important;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .custom-nav-item {
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
+        border-left: 1px !important;
+    }
+
+    .nav-item:last-child {
+        border-left: none !important;
+    }
+}
+
+.dropdown-menu {
+    border-radius: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        opacity: 0 !important;
+        display: block !important;
+        visibility: hidden !important;
+        top: 80px !important;
+        transition: all 0.3s ease !important;
+        transition-delay: 0.2s !important;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: block !important;
+        top: 63px !important;
+    }
+}
+
+.custom-a-none-border {
+    border: none !important;
+}
+
+.custom-container-fluid {
+    position: relative !important;
+    background-blend-mode: overlay !important;
+    background-image: url("assets/images/background1.jpg") !important;
+    width: 100% !important;
+    height: 260px !important;
+}
+
+.title {
+    position: relative !important;
+    top: 95px !important;
+    color: #FFE9E9 !important;
+    background: #D80F34 !important;
 }
